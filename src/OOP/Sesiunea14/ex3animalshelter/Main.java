@@ -1,5 +1,6 @@
 package OOP.Sesiunea14.ex3animalshelter;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -27,8 +28,15 @@ public class Main {
         copyDog.greeting(copySecurityDog);
         copySecurityDog.greeting(copyDog);
 
-        Animal animal = getAnimal();
-        animal.greeting();
+//        Animal animal = getAnimal();
+//        animal.greeting();
+
+        Shelter shelter = new Shelter(10);
+        shelter.addAnimal(getAnimal());
+       // System.out.println(Arrays.toString(shelter.getAnimals()));
+        shelter.addAnimal(getAnimal());
+        shelter.addAnimal(getAnimal());
+        shelter.makeNoise();
 
     }
 
@@ -42,7 +50,7 @@ public class Main {
                 return new Dog("azor");
             case 3:
                 return new SecurityDog("politia");
-            defaul:
+            default:
             return null;
 
         }

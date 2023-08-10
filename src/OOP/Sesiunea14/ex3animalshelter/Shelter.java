@@ -5,6 +5,20 @@ public class Shelter {
     private Animal[] animals;
     private int numberOfAnimals;
 
-    public void makeNoise(){}
+    public Shelter(int size) {
+        this.animals = new Animal[size];
+        numberOfAnimals = 0;
+    }
+
+    public void makeNoise(){
+        for(int i = 0; i < numberOfAnimals; i++){
+            animals[i].greeting();
+        }
+    }
+
+    public void addAnimal ( Animal animal){
+        animals[numberOfAnimals] = animal;
+        numberOfAnimals++;
+    }
 
 }
