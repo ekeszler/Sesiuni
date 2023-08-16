@@ -13,5 +13,6 @@ public class Main {
         department.printAllEmployeesNames();
         department.printAllEmployeesAdressStreets();
         department.printAllEmployeesAdress();
+        department.printNumberOfEmployeeAdded();
     }
 }

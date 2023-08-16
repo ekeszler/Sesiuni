@@ -54,4 +54,9 @@ public class Department {
             System.out.println(employees[i].getAdress());
         }
     }
+
+    public void printNumberOfEmployeeAdded(){
+            System.out.println(numberOfEmployeesAdded);
+
+    }
 }
