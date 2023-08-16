@@ -12,5 +12,6 @@ public class Main {
         Department department = new Department("dep1", firstDepEmpList, 2);
         department.printAllEmployeesNames();
         department.printAllEmployeesAdressStreets();
+        department.printAllEmployeesAdress();
     }
 }

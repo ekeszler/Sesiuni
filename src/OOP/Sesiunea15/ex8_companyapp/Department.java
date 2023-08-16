@@ -48,4 +48,10 @@ public class Department {
             System.out.println(employees[i].getAdressStreet());
         }
     }
+
+    public void printAllEmployeesAdress(){
+        for(int i = 0; i < numberOfEmployeesAdded; i++){
+            System.out.println(employees[i].getAdress());
+        }
+    }
 }
