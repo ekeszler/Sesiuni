@@ -57,6 +57,9 @@ public class Department {
 
     public void printNumberOfEmployeeAdded(){
             System.out.println(numberOfEmployeesAdded);
-
     }
+
+    public void searchEmployeeByName(String searchName)(
+            
+            )
 }
