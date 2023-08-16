@@ -3,11 +3,11 @@ package OOP.Sesiunea15.ex8_companyapp;
 public class Department {
     private String name;
 
-    private Employee employees;
+    private Employee[] employees;
 
     private int numberOfEmployeesAdded;
 
-    public Department(String name, Employee employees, int numberOfEmployeesAdded) {
+    public Department(String name, Employee[] employees, int numberOfEmployeesAdded) {
         this.name = name;
         this.employees = employees;
         this.numberOfEmployeesAdded = numberOfEmployeesAdded;
@@ -21,11 +21,11 @@ public class Department {
         this.name = name;
     }
 
-    public Employee getEmployees() {
+    public Employee[] getEmployees() {
         return employees;
     }
 
-    public void setEmployees(Employee employees) {
+    public void setEmployees(Employee[] employees) {
         this.employees = employees;
     }
 
@@ -45,7 +45,7 @@ public class Department {
 
     public void printAllEmployeesAdressStreets(){
         for(int i = 0; i < numberOfEmployeesAdded; i++){
-            System.out.println(employees[i].getAdress().getStreet);
+            System.out.println(employees[i].getAdressStreet());
         }
     }
 }
