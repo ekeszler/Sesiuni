@@ -11,7 +11,7 @@ public class Company {
    private int numberOfDepartmentsAdded;
 
    public void printAllEmployeesStreetsByDepartment(String departmentName){
-       //cautam departamentul in lista de departamente a companiei pe care se apeleaza matoda
+       //cautam departamentul in lista de departamente a companiei pe care se apeleaza metoda
        //pe departamentul gasit apelez metoda de printAllEmployeesAdressStreets
    }
 }

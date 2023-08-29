@@ -14,5 +14,6 @@ public class Main {
         department.printAllEmployeesAdressStreets();
         department.printAllEmployeesAdress();
         department.printNumberOfEmployeeAdded();
+        department.searchEmployeeByName();
     }
 }

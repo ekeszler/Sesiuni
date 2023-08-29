@@ -59,7 +59,15 @@ public class Department {
             System.out.println(numberOfEmployeesAdded);
     }
 
-    public void searchEmployeeByName(String searchName)(
-            
-            )
+    public void searchEmployeeByName(){
+        String searchName = "Costica Mirel";
+        for (int i = 0; i < numberOfEmployeesAdded ; i++) {
+            if(searchName.equals(employees[i].getName())){
+                System.out.println(employees[i].getName());
+            }
+        }
+    }
+
+
+
 }
