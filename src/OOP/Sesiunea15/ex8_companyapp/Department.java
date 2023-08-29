@@ -60,10 +60,32 @@ public class Department {
     }
 
     public void searchEmployeeByName(){
-        String searchName = "Costica Mirel";
+        String searchName = "Ionica Georgel";
         for (int i = 0; i < numberOfEmployeesAdded ; i++) {
             if(searchName.equals(employees[i].getName())){
                 System.out.println(employees[i].getName());
+            }
+        }
+    }
+
+    public void printSpecificEmployeesAdress(){
+        //1. parcurg array-ul de angajati si verific daca angajatul se afla in lista
+        //2. daca da, printam adresa angajatului de la pozitia i (care este egal cu numele cerut)
+        String employeeName = "Ionica Georgel";
+        for (int i = 0; i < numberOfEmployeesAdded; i++) {
+            if(employeeName.equals(employees[i].getName())){
+                System.out.println(employees[i].getAdress());
+            }
+        }
+    }
+
+    public void searchAdressByStreet(){
+        //1. parcurg array-ul de angajati si verific daca strada ceruta se afla in adresa vreunui angajat
+        //2. daca da, printez strada
+        String requestedStreet = "rich street";
+        for (int i = 0; i < numberOfEmployeesAdded; i++) {
+            if(requestedStreet.equals(employees[i].getAdressStreet())){
+                System.out.println(employees[i].getAdressStreet());
             }
         }
     }
