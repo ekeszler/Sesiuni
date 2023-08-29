@@ -24,5 +24,6 @@ public class Main {
         Department[] departments = {department1, department2};
         Company company = new Company("comp1",2002,departments, 2);
         company.printAllDepartmentsOfCompany();
+        company.printAllEmployeesByDepartment();
     }
 }
