@@ -75,6 +75,15 @@ public class Company {
       }
    }
 
+   public void printStreetsOfEmployeesByDepartment(){
+      String requestedDep = "dep1";
+      for (int i = 0; i < numberOfDepartmentsAdded; i++) {
+         if(requestedDep.equals(departments[i].getName())){
+            departments[i].printAllEmployeesAdressStreets();
+         }
+      }
+   }
+
    public void printAllEmployeesStreetsByDepartment(String departmentName){
        //cautam departamentul in lista de departamente a companiei pe care se apeleaza metoda
        //pe departamentul gasit apelez metoda de printAllEmployeesAdressStreets

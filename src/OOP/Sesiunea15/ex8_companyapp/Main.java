@@ -26,5 +26,6 @@ public class Main {
         company.printAllDepartmentsOfCompany();
         company.printAllEmployeesByDepartment();
         company.printNumberOfEmployeesByDepartment();
+        company.printStreetsOfEmployeesByDepartment();
     }
 }
