@@ -84,10 +84,18 @@ public class Company {
       }
    }
 
-   public void printAllEmployeesStreetsByDepartment(String departmentName){
-       //cautam departamentul in lista de departamente a companiei pe care se apeleaza metoda
-       //pe departamentul gasit apelez metoda de printAllEmployeesAdressStreets
+   public void printStreetByEmployee(){
+      //trebuie sa citesc numele angajatului cerut intr-o variabila
+      //caut angajatul in companie iar mai apoi aplic metoda getAdressStreet din obiectul employee
+      String requestedEmployee = "Ionica Georgel";
+      for (int i = 0; i < numberOfDepartmentsAdded; i++) {
+         if(requestedEmployee.equals(departments[i].getEmployees())){
+            System.out.println("buna ziua");;
+         }
+      }
    }
+
+
 
    @Override
    public String toString() {

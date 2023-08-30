@@ -81,6 +81,17 @@ public class Department {
         }
     }
 
+    public void printSpecificEmployeesStreet(){
+        //1. parcurg array-ul de angajati si verific daca angajatul se afla in lista
+        //2. daca da, printam adresa angajatului de la pozitia i (care este egal cu numele cerut)
+        String employeeName = "Ionica Georgel";
+        for (int i = 0; i < numberOfEmployeesAdded; i++) {
+            if(employeeName.equals(employees[i].getName())){
+                System.out.println(employees[i].getAdressStreet());
+            }
+        }
+    }
+
     public void searchAdressByStreet(){
         //1. parcurg array-ul de angajati si verific daca strada ceruta se afla in adresa vreunui angajat
         //2. daca da, printez strada
@@ -91,6 +102,15 @@ public class Department {
             }
         }
     }
+
+    public String getEmployeeName(){
+        for (int i = 0; i < numberOfEmployeesAdded; i++) {
+
+        }
+        return employees[i].getName();
+    }
+
+
 
 
 
