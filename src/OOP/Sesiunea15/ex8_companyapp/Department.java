@@ -1,5 +1,7 @@
 package OOP.Sesiunea15.ex8_companyapp;
 
+import java.util.Arrays;
+
 public class Department {
     private String name;
 
@@ -92,4 +94,12 @@ public class Department {
 
 
 
+    @Override
+    public String toString() {
+        return "Department{" +
+                "name='" + name + '\'' +
+                ", employees=" + Arrays.toString(employees) +
+                ", numberOfEmployeesAdded=" + numberOfEmployeesAdded +
+                '}';
+    }
 }

@@ -62,7 +62,7 @@ public class Company {
       String requestedDep = "dep1";
       for (int i = 0; i < numberOfDepartmentsAdded; i++) {
          if(requestedDep.equals(departments[i].getName())){
-            System.out.println(departments[i].getEmployees().toString());
+            departments[i].printAllEmployeesNames();
          }
       }
    }
@@ -70,5 +70,15 @@ public class Company {
    public void printAllEmployeesStreetsByDepartment(String departmentName){
        //cautam departamentul in lista de departamente a companiei pe care se apeleaza metoda
        //pe departamentul gasit apelez metoda de printAllEmployeesAdressStreets
+   }
+
+   @Override
+   public String toString() {
+      return "Company{" +
+              "name='" + name + '\'' +
+              ", yearFounded=" + yearFounded +
+              ", departments=" + Arrays.toString(departments) +
+              ", numberOfDepartmentsAdded=" + numberOfDepartmentsAdded +
+              '}';
    }
 }
