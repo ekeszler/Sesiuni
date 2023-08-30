@@ -25,5 +25,6 @@ public class Main {
         Company company = new Company("comp1",2002,departments, 2);
         company.printAllDepartmentsOfCompany();
         company.printAllEmployeesByDepartment();
+        company.printNumberOfEmployeesByDepartment();
     }
 }
