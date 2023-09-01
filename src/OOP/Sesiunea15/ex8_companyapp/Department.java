@@ -102,16 +102,4 @@ public class Department {
         }
     }
 
-
-
-
-
-    @Override
-    public String toString() {
-        return "Department{" +
-                "name='" + name + '\'' +
-                ", employees=" + Arrays.toString(employees) +
-                ", numberOfEmployeesAdded=" + numberOfEmployeesAdded +
-                '}';
-    }
 }

@@ -91,12 +91,23 @@ public class Company {
    }
 
    public void printWantedEmployee(){
+      String requestedDep = "dep1";
       for (int i = 0; i < numberOfDepartmentsAdded; i++) {
-         departments[i].searchEmployeeByName();
+         if(requestedDep.equals(departments[i].getName())) {
+            departments[i].searchEmployeeByName();
+         }else{
+            System.out.println("angajatul nu se afla in departament");
+         }
       }
    }
 
    public void printAllEmployees(){
+      for (int i = 0; i < numberOfDepartmentsAdded; i++) {
+         departments[i].printAllEmployeesNames();
+      }
+   }
+
+   public void printTotalNumberOfEmployees(){
       int totalEmployeesNumber = 0;
       for (int i = 0; i < numberOfDepartmentsAdded; i++) {
          totalEmployeesNumber += departments[i].getNumberOfEmployeesAdded();
@@ -104,15 +115,12 @@ public class Company {
       System.out.println("numarul total de angajati este " + totalEmployeesNumber);
    }
 
+   public void printWantedEmployeeFromCompany(){
+      for (int i = 0; i < numberOfDepartmentsAdded; i++) {
+            departments[i].searchEmployeeByName();
+         }
+      }
 
 
-   @Override
-   public String toString() {
-      return "Company{" +
-              "name='" + name + '\'' +
-              ", yearFounded=" + yearFounded +
-              ", departments=" + Arrays.toString(departments) +
-              ", numberOfDepartmentsAdded=" + numberOfDepartmentsAdded +
-              '}';
-   }
+
 }

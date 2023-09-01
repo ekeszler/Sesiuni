@@ -54,13 +54,4 @@ public class Employee {
         this.adress = adress;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", salary=" + salary +
-                ", adress=" + adress +
-                '}';
-    }
 }

@@ -30,5 +30,7 @@ public class Main {
         company.printStreetByEmployee();
         company.printWantedEmployee();
         company.printAllEmployees();
+        company.printTotalNumberOfEmployees();
+        company.printWantedEmployeeFromCompany();
     }
 }
