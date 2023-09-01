@@ -96,6 +96,12 @@ public class Company {
       }
    }
 
+   public void printAllEmployees(){
+      for (int i = 0; i < numberOfDepartmentsAdded; i++) {
+         departments[i].printAllEmployeesNames();
+      }
+   }
+
 
 
    @Override

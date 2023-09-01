@@ -29,5 +29,6 @@ public class Main {
         company.printStreetsOfEmployeesByDepartment();
         company.printStreetByEmployee();
         company.printWantedEmployee();
+        company.printAllEmployees();
     }
 }
