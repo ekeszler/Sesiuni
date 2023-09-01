@@ -124,4 +124,8 @@ public class Department {
         return maxSalary;
     }
 
+    public int minSalary(){
+        int minSalary
+    }
+
 }
