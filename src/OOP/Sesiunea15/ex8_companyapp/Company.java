@@ -90,6 +90,12 @@ public class Company {
       }
    }
 
+   public void printWantedEmployee(){
+      for (int i = 0; i < numberOfDepartmentsAdded; i++) {
+         departments[i].searchEmployeeByName();
+      }
+   }
+
 
 
    @Override
