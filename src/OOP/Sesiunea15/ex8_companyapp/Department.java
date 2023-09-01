@@ -103,11 +103,13 @@ public class Department {
         }
     }
 
-    public String getEmployeeName(){//8.14
+    public void printAdressStreetByEmployee (){
+        String requestedEmployee = "Ionica Mirel";
         for (int i = 0; i < numberOfEmployeesAdded; i++) {
-
+            if(requestedEmployee.equals(employees[i].getName())){
+                System.out.println(employees[i].getAdressStreet());
+            }
         }
-        return employees[i].getName();
     }
 
 

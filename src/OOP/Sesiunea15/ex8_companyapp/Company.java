@@ -84,14 +84,9 @@ public class Company {
       }
    }
 
-   public void printStreetByEmployee(){//8.14
-      //trebuie sa citesc numele angajatului cerut intr-o variabila
-      //caut angajatul in companie iar mai apoi aplic metoda getAdressStreet din obiectul employee
-      String requestedEmployee = "Ionica Georgel";
+   public void printStreetByEmployee(){
       for (int i = 0; i < numberOfDepartmentsAdded; i++) {
-         if(requestedEmployee.equals(departments[i].getEmployees())){
-            System.out.println("buna ziua");;
-         }
+         departments[i].printAdressStreetByEmployee();
       }
    }
 

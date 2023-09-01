@@ -2,9 +2,9 @@ package OOP.Sesiunea15.ex8_companyapp;
 
 public class Main {
     public static void main(String[] args) {
-        Adress adress1 = new Adress("Los Angeles", "rich street", 1);
+        Adress adress1 = new Adress("Los Angeles", "poor street", 1);
         Adress adress2 = new Adress("Los Angeles", "rich street", 2);
-        Adress adress3 = new Adress("Los Angeles", "rich street", 3);
+        Adress adress3 = new Adress("Los Angeles", "noname street", 3);
         Employee employee1 = new Employee("Ionica", "Georgel", 10000, adress1);
         Employee employee2 = new Employee("Ionica", "Marcel", 10000, adress2);
         Employee employee3 = new Employee("Ionica", "Mirel", 9000, adress3);
@@ -27,6 +27,7 @@ public class Main {
         company.printAllEmployeesByDepartment();
         company.printNumberOfEmployeesByDepartment();
         company.printStreetsOfEmployeesByDepartment();
+        //department1.printAdressStreetByEmployee();
         company.printStreetByEmployee();
     }
 }
