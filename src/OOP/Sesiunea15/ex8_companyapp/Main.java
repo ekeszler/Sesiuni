@@ -7,7 +7,7 @@ public class Main {
         Adress adress3 = new Adress("Los Angeles", "noname street", 3);
         Employee employee1 = new Employee("Ionica", "Georgel", 12000, adress1);
         Employee employee2 = new Employee("Ionica", "Marcel", 10000, adress2);
-        Employee employee3 = new Employee("Ionica", "Mirel", 9000, adress3);
+        Employee employee3 = new Employee("Ionica", "Mirel", 15000, adress3);
         Employee[] firstDepEmpList = {employee1, employee2};
         Employee[] secondDepEmpList = {employee3};
 //        System.out.println(employee1.getName());
@@ -32,6 +32,7 @@ public class Main {
         company.printAllEmployees();
         company.printTotalNumberOfEmployees();
         company.printWantedEmployeeFromCompany();
-        department1.maxSalaryEmployee();
+        company.printMaximumSalaryEmployeeFromDep();
+        company.prinMaximumSalaryEmployeeFromCompany();
     }
 }

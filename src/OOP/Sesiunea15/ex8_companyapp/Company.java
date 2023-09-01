@@ -121,8 +121,26 @@ public class Company {
         }
     }
 
-    public void prinMaximumSalaryEmployeeFromDep(){
+    public void printMaximumSalaryEmployeeFromDep(){
+        String requestedDep = "dep1";
+        for (int i = 0; i < numberOfDepartmentsAdded; i++) {
+            if(requestedDep.equals(departments[i].getName())){
+                System.out.println(departments[i].maxSalaryEmployee());
+            }
+        }
+    }
 
+    public void prinMaximumSalaryEmployeeFromCompany(){
+        //prima data trebuie sa aflu cel mai mare salar din companie. Pentru asta definesc o variabila maxSalary in care voi stoca cel mai mare salariu din companie
+        int maxSalary = 0;
+        String richEmployee = null;
+        for (int i = 0; i < numberOfDepartmentsAdded; i++) {
+            if(departments[i].maxSalary() > maxSalary){
+                maxSalary = departments[i].maxSalary();
+                richEmployee = departments[i].maxSalaryEmployee();
+            }
+        }
+        System.out.println("angajatul cu cel mai mare salar din companie este: " + richEmployee);
     }
 
 

@@ -102,7 +102,7 @@ public class Department {
         }
     }
 
-    public void maxSalaryEmployee(){
+    public String maxSalaryEmployee(){
         int maxSalary = 0;
         String richEmployee = null;
         for (int i = 0; i < numberOfEmployeesAdded; i++) {
@@ -111,7 +111,17 @@ public class Department {
                 richEmployee = employees[i].getName();
             }
         }
-        System.out.println("angajatul cu salar maxim este: " + richEmployee);
+        return richEmployee;
+    }
+
+    public int maxSalary(){
+        int maxSalary = 0;
+        for (int i = 0; i < numberOfEmployeesAdded; i++) {
+            if(employees[i].getSalary() > maxSalary){
+                maxSalary = employees[i].getSalary();
+            }
+        }
+        return maxSalary;
     }
 
 }
