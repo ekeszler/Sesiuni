@@ -97,9 +97,11 @@ public class Company {
    }
 
    public void printAllEmployees(){
+      int totalEmployeesNumber = 0;
       for (int i = 0; i < numberOfDepartmentsAdded; i++) {
-         departments[i].printAllEmployeesNames();
+         totalEmployeesNumber += departments[i].getNumberOfEmployeesAdded();
       }
+      System.out.println("numarul total de angajati este " + totalEmployeesNumber);
    }
 
 
