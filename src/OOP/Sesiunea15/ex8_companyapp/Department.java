@@ -102,4 +102,16 @@ public class Department {
         }
     }
 
+    public void maxSalaryEmployee(){
+        int maxSalary = 0;
+        String richEmployee = null;
+        for (int i = 0; i < numberOfEmployeesAdded; i++) {
+            if(employees[i].getSalary() > maxSalary){
+                maxSalary = employees[i].getSalary();
+                richEmployee = employees[i].getName();
+            }
+        }
+        System.out.println("angajatul cu salar maxim este: " + richEmployee);
+    }
+
 }

@@ -5,7 +5,7 @@ public class Main {
         Adress adress1 = new Adress("Los Angeles", "poor street", 1);
         Adress adress2 = new Adress("Los Angeles", "rich street", 2);
         Adress adress3 = new Adress("Los Angeles", "noname street", 3);
-        Employee employee1 = new Employee("Ionica", "Georgel", 10000, adress1);
+        Employee employee1 = new Employee("Ionica", "Georgel", 12000, adress1);
         Employee employee2 = new Employee("Ionica", "Marcel", 10000, adress2);
         Employee employee3 = new Employee("Ionica", "Mirel", 9000, adress3);
         Employee[] firstDepEmpList = {employee1, employee2};
@@ -32,5 +32,6 @@ public class Main {
         company.printAllEmployees();
         company.printTotalNumberOfEmployees();
         company.printWantedEmployeeFromCompany();
+        department1.maxSalaryEmployee();
     }
 }
