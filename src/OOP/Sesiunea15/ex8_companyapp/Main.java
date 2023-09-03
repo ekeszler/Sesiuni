@@ -37,5 +37,6 @@ public class Main {
         company.printMaximumSalaryEmployeeFromDep();
         company.prinMaximumSalaryEmployeeFromCompany();
         company.printMinimumSalaryEmployeeFromCompany();
+        company.printMinimumSalaryEmployeeFromDep();
     }
 }

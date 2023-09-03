@@ -155,5 +155,14 @@ public class Company {
         System.out.println("angajatul cu cel mai mic salar din companie este: " + poorEmployee);
     }
 
+    public void printMinimumSalaryEmployeeFromDep(){
+        String requestedDep = "dep2";
+        for (int i = 0; i < numberOfDepartmentsAdded; i++) {
+            if(requestedDep.equals(departments[i].getName())){
+                System.out.println("angajatul cu cel mai mic salar din departament este: " + departments[i].minSalaryEmployee());
+            }
+        }
+    }
+
 
 }
