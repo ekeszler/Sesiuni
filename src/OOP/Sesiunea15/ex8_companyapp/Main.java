@@ -5,15 +5,17 @@ public class Main {
         Adress adress1 = new Adress("Los Angeles", "poor street", 1);
         Adress adress2 = new Adress("Los Angeles", "rich street", 2);
         Adress adress3 = new Adress("Los Angeles", "noname street", 3);
+        Adress adress4 = new Adress("Los Angeles", "noname street", 4);
         Employee employee1 = new Employee("Ionica", "Georgel", 12000, adress1);
         Employee employee2 = new Employee("Ionica", "Marcel", 10000, adress2);
         Employee employee3 = new Employee("Ionica", "Mirel", 15000, adress3);
+        Employee employee4 = new Employee("Ionica", "Cercel", 9000, adress4);
         Employee[] firstDepEmpList = {employee1, employee2};
-        Employee[] secondDepEmpList = {employee3};
+        Employee[] secondDepEmpList = {employee3, employee4};
 //        System.out.println(employee1.getName());
 //        System.out.println(employee1.getAdressStreet());
         Department department1 = new Department("dep1", firstDepEmpList, 2);
-        Department department2 = new Department("dep2", secondDepEmpList, 1);
+        Department department2 = new Department("dep2", secondDepEmpList, 2);
         department1.printAllEmployeesNames();
         department1.printAllEmployeesAdressStreets();
         department1.printAllEmployeesAdress();
@@ -34,5 +36,6 @@ public class Main {
         company.printWantedEmployeeFromCompany();
         company.printMaximumSalaryEmployeeFromDep();
         company.prinMaximumSalaryEmployeeFromCompany();
+        company.printMinimumSalaryEmployeeFromCompany();
     }
 }

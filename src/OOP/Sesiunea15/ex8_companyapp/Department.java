@@ -124,8 +124,26 @@ public class Department {
         return maxSalary;
     }
 
+    public String minSalaryEmployee(){
+        int minSalary = 100000;
+        String poorEmployee = null;
+        for (int i = 0; i < numberOfEmployeesAdded; i++) {
+            if(minSalary > employees[i].getSalary()){
+                minSalary = employees[i].getSalary();
+                poorEmployee = employees[i].getName();
+            }
+        }
+        return poorEmployee;
+    }
+
     public int minSalary(){
-        int minSalary
+        int minSalary = 100000;
+        for (int i = 0; i < numberOfEmployeesAdded; i++) {
+            if(minSalary > employees[i].getSalary()){
+                minSalary = employees[i].getSalary();
+            }
+        }
+        return minSalary;
     }
 
 }

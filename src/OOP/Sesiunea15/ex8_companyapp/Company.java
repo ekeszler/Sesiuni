@@ -143,5 +143,17 @@ public class Company {
         System.out.println("angajatul cu cel mai mare salar din companie este: " + richEmployee);
     }
 
+    public void printMinimumSalaryEmployeeFromCompany(){
+        int minSalary = 100000;
+        String poorEmployee = null;
+        for (int i = 0; i < numberOfDepartmentsAdded; i++) {
+            if(minSalary > departments[i].minSalary()){
+                minSalary = departments[i].minSalary();
+                poorEmployee = departments[i].minSalaryEmployee();
+            }
+        }
+        System.out.println("angajatul cu cel mai mic salar din companie este: " + poorEmployee);
+    }
+
 
 }
