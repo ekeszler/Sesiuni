@@ -1,5 +1,6 @@
 package OOP.ex9;
 
+
 public class Masina {
 
     String culoare;
@@ -7,6 +8,7 @@ public class Masina {
     String numarInmatriculare;
 
     String stare;
+
 
     public Masina(String culoare, String numarInmatriculare, String stare) {
         this.culoare = culoare;
