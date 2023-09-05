@@ -101,8 +101,10 @@ public class Parcare {
     public void printMenuVar3() {
         System.out.println("------MENU------");
         System.out.println("1.CREATI PARCAREA (OBLIGATORIU)");
-        System.out.println("2.LEAVE");
-        System.out.println("3.EXIT MENU");
+        System.out.println("2.PARK");
+        System.out.println("3.LEAVE");
+        System.out.println("4.STATUS");
+        System.out.println("5.EXIT MENU");
     }
 
     public void performSelectionVar3() {
@@ -117,9 +119,8 @@ public class Parcare {
                     totalLocuri = scanner.nextInt();
                     System.out.println("a fost creata o parcare cu " + totalLocuri + " locuri");
                     break;
-                for (int i = 0; i < totalLocuri; i+) {
+                for (int i = 0; i < totalLocuri; i++) {
                     case 2:
-                        +
                         if (locuriOcupate >= totalLocuri) {
                             System.out.println("ne pare rau parcarea este plina");
                         } else {
@@ -133,12 +134,13 @@ public class Parcare {
                         locuriOcupate = locuriOcupate - 1;
                         i--;
                         break;
-                    case 4:
-                        System.out.println();
-                        break;
                 }
-                case 5:
-                    break;
+                    case 4:
+                        System.out.println("Sunt ocupate: " + locuriOcupate + " locuri");
+                        System.out.println("Sunt libere: " + (totalLocuri - locuriOcupate) + " locuri");
+                        break;
+                    case 5:
+                        break;
             }
         } while (option != 5);
 

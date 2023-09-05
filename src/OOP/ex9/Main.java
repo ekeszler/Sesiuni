@@ -8,7 +8,9 @@ public class Main {
         Masina[] masini1 = {masina1, masina2, masina3};
         Parcare parcare = new Parcare( 0, masini1, 2);
         parcare.situatieMasiniVarianta1();
-        parcare.printMenuVar2();
-        parcare.performSelectionVar2();
+        //parcare.printMenuVar2();
+        //parcare.performSelectionVar2();
+        parcare.printMenuVar3();
+        parcare.performSelectionVar3();
     }
 }
