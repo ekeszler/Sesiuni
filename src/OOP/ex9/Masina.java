@@ -9,11 +9,14 @@ public class Masina {
 
     String stare;
 
+    int spot;
+
 
     public Masina(String culoare, String numarInmatriculare, String stare) {
         this.culoare = culoare;
         this.numarInmatriculare = numarInmatriculare;
         this.stare = stare;
+        this.spot = spot;
     }
 
     public String getCuloare() {
@@ -38,5 +41,9 @@ public class Masina {
 
     public void setStare(String stare) {
         this.stare = stare;
+    }
+
+    public int getSpot() {
+        return spot;
     }
 }

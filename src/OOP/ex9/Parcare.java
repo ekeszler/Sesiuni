@@ -110,40 +110,43 @@ public class Parcare {
     public void performSelectionVar3() {
         Scanner scanner = new Scanner(System.in);
         int option = 0;
-        do {
-            System.out.println("va rugam selectati optiunea");
-            option = scanner.nextInt();
-            switch (option) {
-                case 1:
-                    System.out.println("introduceti numarul de locuri pentru noua parcare");
-                    totalLocuri = scanner.nextInt();
-                    System.out.println("a fost creata o parcare cu " + totalLocuri + " locuri");
-                    break;
-                for (int i = 0; i < totalLocuri; i++) {
+        for (int i = 1; i <= totalLocuri; i++) {
+            do {
+                System.out.println("va rugam selectati optiunea");
+                option = scanner.nextInt();
+                switch (option) {
+                    case 1:
+                        System.out.println("introduceti numarul de locuri pentru noua parcare");
+                        totalLocuri = scanner.nextInt();
+                        System.out.println("a fost creata o parcare cu " + totalLocuri + " locuri");
+                        break;
                     case 2:
                         if (locuriOcupate >= totalLocuri) {
                             System.out.println("ne pare rau parcarea este plina");
                         } else {
-                            System.out.println("Masina " + masini[i].getCuloare() + " a parcat pe locul " + (i + 1));
+                            System.out.println("Masina " + masini[i].getCuloare() + " " + masini[i].getNumarInmatriculare() +  " a parcat pe locul " + masini[i].getSpot());
                             locuriOcupate = locuriOcupate + 1;
                             i++;
                         }
                         break;
                     case 3:
-                        System.out.println("S-a eliberat locul de parcare numarul: " + (i));
+                        System.out.println("S-a eliberat locul de parcare numarul: " + masini[i].getSpot());
                         locuriOcupate = locuriOcupate - 1;
                         i--;
                         break;
-                }
                     case 4:
-                        System.out.println("Sunt ocupate: " + locuriOcupate + " locuri");
-                        System.out.println("Sunt libere: " + (totalLocuri - locuriOcupate) + " locuri");
+                        if(locuriOcupate >= totalLocuri){
+                            System.out.println("parcarea este plina");
+                        }else{
+                        System.out.println(masini[i].getSpot() + " " + masini[i].getNumarInmatriculare() + " " + masini[i].getCuloare());
+                        }
                         break;
                     case 5:
                         break;
-            }
-        } while (option != 5);
+                }
+            } while (option != 5);
 
+        }
     }
 }
 
