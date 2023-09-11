@@ -110,7 +110,7 @@ public class Parcare {
     public void performSelectionVar3() {
         Scanner scanner = new Scanner(System.in);
         int option = 0;
-        for (int i = 1; i <= totalLocuri; i++) {
+        for (int i = 0; i < totalLocuri; i++) {
             do {
                 System.out.println("va rugam selectati optiunea");
                 option = scanner.nextInt();
@@ -124,13 +124,13 @@ public class Parcare {
                         if (locuriOcupate >= totalLocuri) {
                             System.out.println("ne pare rau parcarea este plina");
                         } else {
-                            System.out.println("Masina " + masini[i].getCuloare() + " " + masini[i].getNumarInmatriculare() +  " a parcat pe locul " + masini[i].getSpot());
+                            System.out.println("Masina " + masini[i].getCuloare() + " " + masini[i].getNumarInmatriculare() +  " a parcat pe locul " + (i+1));
                             locuriOcupate = locuriOcupate + 1;
                             i++;
                         }
                         break;
                     case 3:
-                        System.out.println("S-a eliberat locul de parcare numarul: " + masini[i].getSpot());
+                        System.out.println("S-a eliberat locul de parcare numarul: " + i);
                         locuriOcupate = locuriOcupate - 1;
                         i--;
                         break;
@@ -138,7 +138,7 @@ public class Parcare {
                         if(locuriOcupate >= totalLocuri){
                             System.out.println("parcarea este plina");
                         }else{
-                        System.out.println(masini[i].getSpot() + " " + masini[i].getNumarInmatriculare() + " " + masini[i].getCuloare());
+                        System.out.println(i + " " + masini[i].getNumarInmatriculare() + " " + masini[i].getCuloare());
                         }
                         break;
                     case 5:
