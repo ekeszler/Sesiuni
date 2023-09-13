@@ -138,7 +138,7 @@ public class Parcare {
                         if(locuriOcupate >= totalLocuri){
                             System.out.println("parcarea este plina");
                         }else{
-                        System.out.println(i + " " + masini[i].getNumarInmatriculare() + " " + masini[i].getCuloare());
+                        System.out.println(i + " " + masini[i-1].getNumarInmatriculare() + " " + masini[i-1].getCuloare());
                         }
                         break;
                     case 5:
